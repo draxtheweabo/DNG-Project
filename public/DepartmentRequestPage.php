@@ -226,9 +226,10 @@ coLor: #000;
 <br>
 
 <b>Date:</b>
-<input type="date" id="datepre" name="date" min="<?php echo date("Y-m-d"); ?>" required/> 
+<?php $max=date('Y-m-d',strtotime('+ 5 month')); ?>
+<input type="date" id="datepre" name="date" min="<?php echo date("Y-m-d"); ?>" max="<?php echo $max; ?>" required/> 
 
-<br>
+<br>  
 <br>
 
 <b>Client Name:</b>

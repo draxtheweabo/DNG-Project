@@ -289,6 +289,7 @@ coLor: #000;
  $username ="root";
  $password="";
  $database="lycorisdb";
+ $expense ="";
  $conn = mysqli_connect("localhost",$username,$password,$database) or die ("Unable to select database"); 
  
  $user_name = $_SESSION["user"];
